@@ -11,7 +11,9 @@ namespace GitExampleApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var userName = Request.Cookies["FirstName"].Value;
+            if(!string.IsNullOrEmpty(userName) )
+                lblHello.Text = "Hello " + userName + "!";
         }
     }
 }
