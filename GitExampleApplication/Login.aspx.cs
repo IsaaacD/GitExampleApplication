@@ -22,7 +22,7 @@ namespace GitExampleApplication
                 SetCookie("FirstName", txtFirstName.Text, expiry);
                 SetCookie("LastName", txtLastName.Text, expiry);
             }
-            Response.Redirect("~/Order.aspx");
+            Response.Redirect("~/Default");
         }
 
         private void SetCookie(string name, string value, DateTime expiry)
